@@ -19,7 +19,6 @@ class ValidadorCpf {
     const digito2 = ValidadorCpf.criaDigito(cpfParcial + digito1);
     //Para criar o digito final do cpf
     const novoCpf = cpfParcial + digito1 + digito2;
-    console.log(novoCpf)
     //Se o novo cpf for igual ao enviado então o cpf enviado é válido
     return novoCpf === this.cpfLimpo;
 }
@@ -45,8 +44,8 @@ class ValidadorCpf {
 
 const cpf = new ValidadorCpf('070.987.720-03')
 
-if (cpf.valida()){
-    console.log('CPF válido');
-} else{
-    console.log('CPF inválido')
-};
+// if (cpf.valida()){
+//     console.log('CPF válido');
+// } else{
+//     console.log('CPF inválido')
+// };
