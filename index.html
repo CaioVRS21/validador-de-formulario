@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validador de Formulário</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só pode conter letra e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisá ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" method="post" class="formulario">
+            <label for="">Nome:</label>
+            <input type="text" name="Nome" class="nomeTxt validar">
+
+            <label for="">Sobrenome:</label>
+            <input type="text" name="Sobrenome" class="sobrenomeTxt validar">
+
+            <label for="">Cpf:</label>
+            <input type="text" name="Cpf" class="cpfTxt validar">
+
+            <label for="">Usuário:</label>
+            <input type="text" name="Usuário" class="usuárioTxt validar">
+
+            <label for="">Senha:</label>
+            <input type="password" name="Senha" class="senhaTxt validar">
+
+            <label for="">Repetir senha:</label>
+            <input type="password" name="Senha" class="repetir-senhaTxt validar">
+            <button type="submit" id="btn">enviar</button>
+        </form>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
